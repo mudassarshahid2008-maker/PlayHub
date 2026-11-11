@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PlayHub - Gaming World</title>
+
+<style>
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    background: #080f20;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+}
+
+header {
+
+    background: #101c35;
+
+    padding: 22px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+}
+
+header h1 {
+
+    color: #00d9ff;
+
+    font-size: 30px;
+
+}
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    margin: 10px;
+
+}
+
+nav a:hover {
+
+    color: #00d9ff;
+
+}
+
+.hero {
+
+    text-align: center;
+
+    padding: 75px 20px;
+
+    background: linear-gradient(135deg, #101c35, #073b65);
+
+}
+
+.hero h2 {
+
+    font-size: 42px;
+
+    margin-bottom: 15px;
+
+}
+
+.hero p {
+
+    color: #c5d8ef;
+
+    font-size: 17px;
+
+}
+
+.games {
+
+    padding: 45px 20px;
+
+    text-align: center;
+
+}
+
+.games h2 {
+
+    color: #00d9ff;
+
+    font-size: 32px;
+
+    margin-bottom: 30px;
+
+}
+
+.game-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 22px;
+
+}
+
+.card {
+
+    background: #142440;
+
+    width: 230px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    border: 1px solid #24466d;
+
+    transition: 0.3s;
+
+}
+
+.card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #00d9ff;
+
+}
+
+.game-icon {
+
+    font-size: 55px;
+
+    margin-bottom: 15px;
+
+}
+
+.card h3 {
+
+    font-size: 22px;
+
+    margin-bottom: 12px;
+
+}
+
+.card p {
+
+    color: #c5d8ef;
+
+    margin-bottom: 20px;
+
+}
+
+button {
+
+    background: #00bde9;
+
+    color: #061426;
+
+    border: none;
+
+    padding: 12px 22px;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+button:hover {
+
+    background: white;
+
+}
+
+.about {
+
+    text-align: center;
+
+    padding: 45px 20px;
+
+    background: #101c35;
+
+}
+
+.about h2 {
+
+    color: #00d9ff;
+
+    margin-bottom: 15px;
+
+}
+
+footer {
+
+    text-align: center;
+
+    padding: 20px;
+
+    color: #9db2cc;
+
+}
+
+
+creator {
+
+    margin: 15px 0;
+
+    font-size: 16px;
+
+}
+
+.creator span {
+
+    color: #00d9ff;
+
+    font-weight: bold;
+
+    text-shadow: 0 0 12px #00d9ff;
+
+}
+
+footer h2 {
+
+    color: #00d9ff;
+
+    margin-bottom: 10px;
+
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>PLAYHUB 🎮</h1>
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#games">Games</a>
+
+        <a href="#about">About</a>
+
+    </nav>
+
+</header>
+
+<section class="hero" id="home">
+
+    <h2>WELCOME TO PLAYHUB</h2>
+
+    <p>Your Gaming World Starts Here!</p>
+
+</section>
+
+<section class="games" id="games">
+
+    <h2>POPULAR GAMES</h2>
+
+    <div class="game-container">
+
+        <div class="card">
+
+            <div class="game-icon">⛏️</div>
+
+            <h3>Minecraft</h3>
+
+            <p>Explore, build and survive!</p>
+
+            <button onclick="alert('Please open TLauncher on your computer to play Minecraft!')">
+
+                PLAY MINECRAFT
+
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <div class="game-icon">🟥</div>
+
+            <h3>Roblox</h3>
+
+            <p>Discover millions of experiences!</p>
+
+            <button onclick="window.location.href='https://www.roblox.com/home'">
+
+                PLAY ROBLOX
+
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <div class="game-icon">🚗</div>
+
+            <h3>GTA V</h3>
+
+            <p>Explore an open world!</p>
+
+            <button onclick="alert('Open GTA V from your computer!')">
+
+                PLAY GTA V
+
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <div class="game-icon">🎯</div>
+
+            <h3>Valorant</h3>
+
+            <p>Enter the tactical battle!</p>
+
+            <button onclick="alert('Open Valorant from your computer!')">
+
+                PLAY VALORANT
+
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <div class="game-icon">🏝️</div>
+
+            <h3>Fortnite</h3>
+
+            <p>Battle and build to win!</p>
+
+            <button onclick="alert('Open Fortnite from your computer!')">
+
+                PLAY FORTNITE
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <h2>ABOUT PLAYHUB</h2>
+
+    <p>PlayHub is a gaming website created for gamers.</p>
+
+    <p>Discover your favourite games in one place!</p>
+
+</section>
+
+<footer>
+    <h2>Where Gamming Never Ends!</h2>
+    <p class="creator">
+        designed and created by
+        <span>Mudassar Bashir</span>
+    </p>
+    <p>© 2026 PlayHub. All Rights Reserved.</p>
+</footer>
+</body>
+
+</html>
+
